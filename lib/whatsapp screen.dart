@@ -11,9 +11,10 @@ class _WhatsAppScreenState extends State<WhatsAppScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    backgroundColor: Colors.white,
+    backgroundColor: Colors.black,
     floatingActionButton:
     Column(
+      mainAxisAlignment:MainAxisAlignment.end,
       children: [
         FloatingActionButton(
           backgroundColor: Colors.white,
@@ -21,7 +22,7 @@ class _WhatsAppScreenState extends State<WhatsAppScreen> {
           onPressed:(){
 
           },
-          child:Icon(Icons.circle_outlined,color:Colors.purple,size:20),
+          child:Icon(Icons.circle_outlined,color:Colors.purple,size:30),
         ),
         SizedBox(height:10),
         FloatingActionButton(
@@ -85,10 +86,10 @@ class _WhatsAppScreenState extends State<WhatsAppScreen> {
     (
     leading:CircleAvatar(
     radius:30,
-   backgroundColor: Colors.pink,
+      backgroundImage: AssetImage('assets/awesome.jpg'),
     ),
     title:Text(
-    'Fatima',style:TextStyle(
+    'azka',style:TextStyle(
     color:Colors.black,
     fontSize:15,
     ),
@@ -112,8 +113,8 @@ class _WhatsAppScreenState extends State<WhatsAppScreen> {
     child:ListTile
     (
     leading:CircleAvatar(
-    radius:40,
-    backgroundColor: Colors.pink,
+    radius:30,
+    backgroundImage: AssetImage('assets/girl.jpg'),
     ),
     title:Text(
     'shazii',style:TextStyle(
@@ -143,23 +144,23 @@ class _WhatsAppScreenState extends State<WhatsAppScreen> {
     (
     leading:CircleAvatar(
     radius:30,
-    backgroundColor: Colors.pink,
+    backgroundImage: AssetImage('assets/girl2.jpg'),
     ),
     title:Text(
-    'Fatima',style:TextStyle(
+    'Anum',style:TextStyle(
     color:Colors.black,
     fontSize:15,
     ),
     ),
     subtitle: Text(
-    'do you have some plain today??',
+    'am coming??',
     style:TextStyle(
     color:Colors.black,
     fontSize:10,
     ),
     ),
     trailing:Text(
-    '5',style:TextStyle(
+    '5:30',style:TextStyle(
      color:Colors.red,fontSize:10,
     ),
     ),
@@ -172,7 +173,7 @@ class _WhatsAppScreenState extends State<WhatsAppScreen> {
     (
     leading:CircleAvatar(
     radius:30,
-    backgroundColor: Colors.pink,
+    backgroundImage: AssetImage('assets/girl3.jpg'),
     ),
     title:Text(
     'Fatima',style:TextStyle(
@@ -189,7 +190,7 @@ class _WhatsAppScreenState extends State<WhatsAppScreen> {
     ),
     trailing:Text(
     '8:30am',style:TextStyle(
-    color:Colors.blueGrey,
+    color:Colors.red,
     ),
     ),
     ),
@@ -201,16 +202,16 @@ class _WhatsAppScreenState extends State<WhatsAppScreen> {
     (
     leading:CircleAvatar(
     radius:30,
-    backgroundColor: Colors.pink,
+    backgroundImage: AssetImage('assets/pictwo.jpg'),
     ),
     title:Text(
-    'Fatima',style:TextStyle(
+    'Farisa',style:TextStyle(
     color:Colors.black,
     fontSize:15,
     ),
     ),
     subtitle: Text(
-    'do you have some plain today??',
+    'wht u eat today??',
     style:TextStyle(
     color:Colors.black,
     fontSize:10,
@@ -218,7 +219,7 @@ class _WhatsAppScreenState extends State<WhatsAppScreen> {
     ),
     trailing: Text(
     '8:30am',style:TextStyle(
-    color:Colors.blueGrey,
+    color:Colors.red,
     ),
     ),
     ),
