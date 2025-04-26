@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projectfive/loginscreen.dart';
 import 'package:projectfive/whatsapp%20screen.dart';
 
 void main() {
@@ -13,8 +14,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner:false,
-        home:
-       WhatsAppScreen()
+        home:LoginScreen()
+       //WhatsAppScreen()
     );
   }
 }

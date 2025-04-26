@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projectfive/Meta%20screen.dart';
 import 'package:projectfive/loginscreen.dart';
 class WhatsAppScreen extends StatefulWidget {
   const WhatsAppScreen({super.key});
@@ -11,7 +12,7 @@ class _WhatsAppScreenState extends State<WhatsAppScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    backgroundColor: Colors.black,
+    backgroundColor: Colors.white,
     floatingActionButton:
     Column(
       mainAxisAlignment:MainAxisAlignment.end,
@@ -20,9 +21,19 @@ class _WhatsAppScreenState extends State<WhatsAppScreen> {
           backgroundColor: Colors.white,
        //   shape:SizedBox.shrink(),
           onPressed:(){
-
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder:(context)=>MetaScreen())
+          );
           },
-          child:Icon(Icons.circle_outlined,color:Colors.purple,size:30),
+          child:Container(
+            height:46,
+            width:46,
+            decoration:BoxDecoration(
+              image:DecorationImage(image: AssetImage('assets/meta.jfif'),fit:BoxFit.cover,
+              ),
+            )
+          ),
         ),
         SizedBox(height:10),
         FloatingActionButton(
@@ -224,6 +235,99 @@ class _WhatsAppScreenState extends State<WhatsAppScreen> {
     ),
     ),
     ),
+
+      Card(
+        color:Colors.white,
+        child:ListTile
+          (
+          leading:CircleAvatar(
+            radius:30,
+            backgroundImage: AssetImage('assets/boy2.jpg'),
+          ),
+          title:Text(
+            'Manii',style:TextStyle(
+            color:Colors.black,
+            fontSize:15,
+          ),
+          ),
+          subtitle: Text(
+            'am getting late you must reach there',
+            style:TextStyle(
+              color:Colors.black,
+              fontSize:10,
+            ),
+          ),
+          trailing:
+          Text(
+            '7:10pm',style:TextStyle(
+            color:Colors.red,fontSize:10,
+          ),
+          ),
+
+        ),
+      ),
+
+      Card(
+        color:Colors.white,
+        child:ListTile
+          (
+          leading:CircleAvatar(
+            radius:30,
+            backgroundImage: AssetImage('assets/girl6.jpg'),
+          ),
+          title:Text(
+            'shazii',style:TextStyle(
+            color:Colors.black,
+            fontSize:15,
+          ),
+          ),
+          subtitle: Text(
+            'Have u watched that drama',
+            style:TextStyle(
+              color:Colors.black,
+              fontSize:10,
+            ),
+          ),
+          trailing:
+          Text(
+            '6:30pm',style:TextStyle(
+            color:Colors.red,fontSize:10,
+          ),
+          ),
+
+        ),
+      ),
+
+      Card(
+        color:Colors.white,
+        child:ListTile
+          (
+          leading:CircleAvatar(
+            radius:30,
+            backgroundImage: AssetImage('assets/girl8.jpg'),
+          ),
+          title:Text(
+            'Ayesha',style:TextStyle(
+            color:Colors.black,
+            fontSize:15,
+          ),
+          ),
+          subtitle: Text(
+            'Alright!!!',
+            style:TextStyle(
+              color:Colors.black,
+              fontSize:10,
+            ),
+          ),
+          trailing:
+          Text(
+            '6:10pm',style:TextStyle(
+            color:Colors.red,fontSize:10,
+          ),
+          ),
+
+        ),
+      ),
     ],
     ),
     ),
