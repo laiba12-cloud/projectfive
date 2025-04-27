@@ -328,8 +328,55 @@ class _WhatsAppScreenState extends State<WhatsAppScreen> {
 
         ),
       ),
-    ],
+      Row(
+        mainAxisAlignment:MainAxisAlignment.spaceEvenly ,
+          children:[
+              Icon(Icons.message_outlined,size:20,),
+
+
+            Icon(Icons.update,size:20),
+
+
+            Icon(Icons.person_add_alt_sharp,size:20),
+
+            Icon(Icons.call,size:20),
+              ],
+            ),
+                SizedBox(height:5),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children:[
+                    Text(
+                      'Chats',style:TextStyle(
+                      color:Colors.black,
+                      fontWeight:FontWeight.bold,fontSize:10,
+                    ),
+                    ),
+
+                    Text(
+                      'Updates',style:TextStyle(
+                      color:Colors.black,
+                      fontWeight:FontWeight.bold,fontSize:10,
+                    ),
+                    ),
+Text(
+      'Communities',style:TextStyle(
+      color:Colors.black,
+      fontWeight:FontWeight.bold,fontSize:10,
     ),
+    ),
+
+                    Text(
+                      'Calls',style:TextStyle(
+                      color:Colors.black,
+                      fontWeight:FontWeight.bold,fontSize:10,
+                    ),
+                    ),
+                  ],
+                )
+
+        ]
+      ),
     ),
 
 

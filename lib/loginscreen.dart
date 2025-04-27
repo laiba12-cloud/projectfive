@@ -14,13 +14,13 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      backgroundColor: Colors.blueGrey,
+      backgroundColor: Colors.black,
       appBar:AppBar(
-        backgroundColor: Colors.blue,
-        leading:Icon(Icons.login,color:Colors.blueGrey),
+        backgroundColor: Colors.red,
+        leading:Icon(Icons.login,color:Colors.black),
         title:Text(
           'Login',style:TextStyle(
-          color:Colors.blueGrey,
+          color:Colors.black,
           fontWeight:FontWeight.bold,
           fontSize:20,
         ),
@@ -37,18 +37,19 @@ class _LoginScreenState extends State<LoginScreen> {
               width:260,
               decoration:BoxDecoration(
                 borderRadius:BorderRadius.circular(10),
-                color:Colors.blue,
+                color:Colors.red,
               ),
               child:TextFormField(
                 controller:emailController,
                 style:TextStyle(
-                  color:Colors.blueGrey,
+                  color:Colors.black,
                   fontWeight:FontWeight.bold,
                 ),
                 decoration:InputDecoration(
+                  border:InputBorder.none,
                   hintText:'enter your email',
                   hintStyle:TextStyle(
-                    color:Colors.blueGrey,
+                    color:Colors.black,
                     fontWeight:FontWeight.bold,
                   ),
                 ),
@@ -60,18 +61,20 @@ class _LoginScreenState extends State<LoginScreen> {
               width:260,
               decoration:BoxDecoration(
                 borderRadius:BorderRadius.circular(10),
-                color:Colors.blue,
+                color:Colors.red,
               ),
               child:TextFormField(
+                keyboardType:TextInputType.number ,
                 controller: passwordController,
                 style:TextStyle(
-                  color:Colors.blueGrey,
+                  color:Colors.black,
                   fontWeight:FontWeight.bold,
                 ),
                 decoration:InputDecoration(
+                  border:InputBorder.none,
                   hintText:'enter your password',
                   hintStyle:TextStyle(
-                    color:Colors.blueGrey,
+                    color:Colors.black,
                     fontWeight:FontWeight.bold,
                   ),
                 ),
@@ -79,7 +82,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             SizedBox(height:40),
             FloatingActionButton(
-              backgroundColor: Colors.blue,
+              backgroundColor: Colors.red,
               onPressed: (){
                 String email=emailController.text;
                 String password=passwordController.text;
@@ -103,7 +106,7 @@ class _LoginScreenState extends State<LoginScreen> {
               },
               child:Text(
                 'Login',style:TextStyle(
-                color:Colors.blueGrey,
+                color:Colors.black,
               ),
               ),
             ),
